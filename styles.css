@@ -1,0 +1,21 @@
+.heading {
+    padding: 10px;
+}
+.heading h2 {
+  color: blue;  
+  font-family: cursive;
+  margin-bottom: 5%;
+}
+
+.heading h3 {  
+    line-height: 15%; 
+    font-family: oblique;
+
+}
+
+.heading h5 {
+    line-height: 10%;
+    font-weight: normal;
+    font-family: oblique;
+}
+
