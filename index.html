@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
    <div class="heading">
@@ -13,24 +14,37 @@
       <h5>Downtown or in nature</h5>
    </div>
 
-    <ul class="navigation">
-        <li><a hre="">Accommodations</a></li>
-        <li><a href="">Activities</a></li>
-        <li><a href="">Sign Up</a></li>
-      </ul>
+    <nav class="navigation">
+       <ul>
+         <li><a hre="">Accommodations</a></li>
+         <li><a href="">Activities</a></li>
+         <li><a href="">Sign Up</a></li>
+       </ul>
+    </nav>
 
-      <form class="search" action="action_page.php">
-        <input type="text" placeholder="Marseille, France" name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-
-     <input type="text" id="myInput" placeholder="Search for names..">
-     <ul id="filters">
-        <li><a href="#">Low cost</a></li>
-        <li><a href="#">Family-friendly</a></li>
-        <li><a href="#">Romantic</a></li>
-        <li><a href="#">Pets allowed</a></li>
-     </ul>
+    <form id="form" role="search">
+      <button style="font-size:24px"><i class="material-icons">place</i></button>
+      <input type="search" id="query" name="q"
+       placeholder="Marseille, France"
+       aria-label="Search through site content">
+      <button class="search">Search</button>
+    </form>
+     
+    <div class="filters">
+         <h4>Filters</h4>
+         <input type="search" id="query" name="q"
+       placeholder="Low Cost"
+       aria-label="Search through site content">
+         <input type="search" id="query" name="q"
+       placeholder="Family-friendly"
+       aria-label="Search through site content">
+         <input type="search" id="query" name="q"
+       placeholder="Romantic"
+       aria-label="Search through site content">
+         <input type="search" id="query" name="q"
+       placeholder="Pets allowed"
+       aria-label="Search through site content">
+     </div>
 
      <button>i</button>
      <h3>More than 500 accommodations are available in the city</h3>
