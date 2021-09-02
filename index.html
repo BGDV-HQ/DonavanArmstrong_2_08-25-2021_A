@@ -6,6 +6,7 @@
     <title>Reservia</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
    <div class="heading">
@@ -32,43 +33,66 @@
      
     <div class="filters">
          <h4>Filters</h4>
-         <input type="search" id="query" name="q"
-       placeholder="Low Cost"
-       aria-label="Search through site content">
-         <input type="search" id="query" name="q"
-       placeholder="Family-friendly"
-       aria-label="Search through site content">
-         <input type="search" id="query" name="q"
-       placeholder="Romantic"
-       aria-label="Search through site content">
-         <input type="search" id="query" name="q"
-       placeholder="Pets allowed"
-       aria-label="Search through site content">
+         <form id="form" role="search">
+            <button style="font-size:24px"><i class="material-icons">attach_money</i></button>
+            <input type="search" id="query" name="q"
+             placeholder="Low cost"
+             aria-label="Search through site content">
+          </form>
+
+          <form id="form" role="search">
+            <button style="font-size:24px"><i class="material-icons">people</i></button>
+            <input type="search" id="query" name="q"
+             placeholder="Family friendly"
+             aria-label="Search through site content">
+          </form>
+
+          <form id="form" role="search">
+            <button style="font-size:24px"><i class="material-icons">wc</i></button>
+            <input type="search" id="query" name="q"
+             placeholder="Romantic"
+             aria-label="Search through site content">
+          </form> 
+
+          <form id="form" role="search">
+            <button style="font-size:24px"><i class="material-icons">gesture</i></button>
+            <input type="search" id="query" name="q"
+             placeholder="Pets allowed"
+             aria-label="Search through site content">
+          </form>
+    </div>
+
+     <div class="city">
+        <button>i</button>
+        <h3>More than 500 accommodations are available in the city</h3>
      </div>
 
-     <button>i</button>
-     <h3>More than 500 accommodations are available in the city</h3>
-
      <h2>Accommodations in Marseille</h2>
-     <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="picture of hotel">
-     <img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="picture of hotel">
-     <img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="picture of hotel">
-     <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="picture of hotel">
-     <img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="picture of hotel">
-     <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="picture of hotel">
-
-     <h2>Most Popular</h2>
-     <img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="picture of hotel">
-     <img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="picture of hotel">
-     <img src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="picture of hotel">
-
-     <h2>Activities in Marseille</h2>
-     <img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="picture of hotel">
-     <img src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="picture of hotel">
-     <img src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="picture of hotel">
-     <img src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="picture of hotel">
-     <img src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="picture of hotel">
-     <img src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="picture of hotel">
+     <div class="accommodations">
+         <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="picture of hotel">
+         <img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="picture of hotel">
+         <img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="picture of hotel">
+         <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="picture of hotel">
+         <img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="picture of hotel">
+         <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="picture of hotel">
+     </div>
+   
+     <div class="Popular">
+         <h2>Most Popular</h2>
+         <img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="picture of hotel">
+         <img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="picture of hotel">
+         <img src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="picture of hotel">
+     </div>
+     
+     <div class="Activities">
+         <h2>Activities in Marseille</h2>
+         <img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="picture of hotel">
+         <img src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="picture of hotel">
+         <img src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="picture of hotel">
+         <img src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="picture of hotel">
+         <img src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="picture of hotel">
+         <img src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="picture of hotel">
+     </div>
 
      <footer>
         <ul>
