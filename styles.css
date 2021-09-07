@@ -120,12 +120,20 @@ form input {
 }
 
 .accommodations {
-  background-color: grey;
+  background-color: rgb(214, 214, 214);
+  border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   float: left;
-  padding: 60px;
+  padding: 120px;
+  height: 400px;
+}
+
+.accomm {
+  position: relative;
+  top: 90px;
+  left: 70px;
 }
 
 .accommodations img {
@@ -136,7 +144,340 @@ form input {
   border-radius: 25px;
 }
 
-.accommodations h2 {
+.accommodations figure {
+  float: left;
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.popular {
+  background-color: rgb(214, 214, 214);
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  float: right;
+  padding: 65px;
+  margin-right: 50px;
+}
+
+.popular img {
+  flex: 0 0 calc(33.33% - 30px);
+  width: 100px;  
+  height: 100px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+
+.popular figure {
+  display: flex;
+  align-items: center;
+  float: right;
+  width: 70%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.popular figcaption {
+  display: table-caption;
+  caption-side: right;
+}
+
+#activity {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50px repeat(9, 40px);
+  grid-column-gap: 40px;
+  padding: 25px 3% 40px 3%;
+  width: 95%;
+  
+}
+
+#activity h2 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+#activity h5 {
+  padding-left: 10px;
+}
+
+.act1 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  grid-column: 1;
+  grid-row: 2 / -1;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+}
+
+.act2 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  grid-column: 2;
+  grid-row: 2 / 6;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+}
+.act3 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  grid-column: 2;
+  grid-row: 7 / -1;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+}
+.act4 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  grid-column: 3;
+  grid-row: 2 / -1;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+}
+.act5 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  grid-column: 4;
+  grid-row: 2 / 6;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+}
+.act6 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  grid-column: 4;
+  grid-row: 7 / -1;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 0px rgba(38, 37, 37, 0.1);
+}
+
+.photo1 {
+  height: 320px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo2 {
+  height: 120px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo3 {
+  height: 120px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo4 {
+  height: 320px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo5 {
+  height: 120px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo6 {
+  height: 120px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*#activity {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 16px;
+  margin-top: 10px;
+  margin-bottom: 2em;
+  background-color: white;
+}
+
+.act1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  margin: 10px 5% 15px 5%;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+}
+
+.act2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  margin: 10px 5% 15px 5%;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+}
+
+.act3 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  margin: 10px 5% 15px 5%;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+}
+
+.act4 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  margin: 10px 5% 15px 5%;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+}
+
+.act5 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  margin: 10px 5% 15px 5%;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+}
+
+.act6 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  margin: 10px 5% 15px 5%;
+  border-radius: 15px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 5px 15px 0px rgba(220, 220, 220, 1);
+}
+
+
+
+.photo1 {
+  height: 135px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo2 {
+  height: 135px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo3 {
+  height: 135px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo4 {
+  height: 135px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo5 {
+  height: 135px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.photo6 {
+  height: 135px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url("images/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}*/
+
+
+footer {
+ 
+  width: 100%;
+  background-color: rgb(214, 214, 214);
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul {
+  margin: auto;
+  text-align: center;
+  padding: 50px;
   
 }
 
