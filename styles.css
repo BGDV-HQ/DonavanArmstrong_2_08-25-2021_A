@@ -119,6 +119,8 @@ form input {
   margin-left: 20px;
 }
 
+
+
 .accommodations {
   background-color: rgb(214, 214, 214);
   border-radius: 15px;
@@ -132,15 +134,20 @@ form input {
 
 .accomm {
   position: relative;
-  top: 90px;
+  top: 150px;
   left: 70px;
+}
+
+.more {
+  position: relative;
+  top: 600px;
+  left: 150px;
 }
 
 .accommodations img {
   flex: 0 0 calc(33.33% - 30px);
-  width: 100px;  
+  width: 100%;  
   height: 100px;
-  margin: 10px;
   border-radius: 25px;
 }
 
@@ -154,7 +161,10 @@ form input {
   border: thin silver solid;
   margin: 0.5em;
   padding: 0.5em;
+  background-color: white;
+  border-radius: 25px;
 }
+
 
 .popular {
   background-color: rgb(214, 214, 214);
@@ -170,7 +180,7 @@ form input {
 
 .popular img {
   flex: 0 0 calc(33.33% - 30px);
-  width: 100px;  
+  width: 100%;  
   height: 100px;
   margin: 10px;
   border-radius: 25px;
@@ -181,14 +191,15 @@ form input {
   display: flex;
   align-items: center;
   float: right;
-  width: 70%;
   text-align: center;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
   border: thin silver solid;
-  margin: 0.5em;
-  padding: 0.5em;
+  border-radius: 25px;
+  width: 70%;
+  margin-bottom: 2em;
+  background-color: white;
 }
 
 .popular figcaption {
@@ -479,6 +490,25 @@ footer ul {
   text-align: center;
   padding: 50px;
   
+}
+
+@media screen and (max-width: 1023px) {
+  .heading {
+    vertical-align: top;
+  }
+
+  .navigation {
+    text-align: center;
+    margin-right: 50px;
+  }
+  ul li {
+    margin-bottom: -8%;
+  }
+
+  .heading h3, h5 {
+    margin-top: 20%;
+  }
+
 }
 
 
