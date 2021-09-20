@@ -1,4 +1,4 @@
-<html lang="en">
+<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,40 +24,42 @@
        </ul>
     </nav>
 <!-- searchbar-->
-    <form id="form" class="searchBar" role="search">
-      <button style="font-size:24px"><i class="material-icons">place</i></button>
-      <input type="search" id="query" name="q"
-       placeholder="Marseille, France"
-       aria-label="Search through site content">
-      <button class="search">Search</button>
-    </form>
+    
+      <form id="form" role="search">
+        <button style="font-size:24px"><i class="material-icons">place</i></button>
+        <input type="search" id="query" name="q"
+        placeholder="Marseille, France"
+        aria-label="Search through site content">
+        <button class="search">Search</button>
+      </form>
+    
      <!-- filters for specific categories-->
     <div class="filters">
          <h4>Filters</h4>
-         <form id="form" role="search">
+         <form id="form1" role="search">
             <button style="font-size:24px"><i class="material-icons">attach_money</i></button>
-            <input type="search" id="query" name="q"
+            <input type="search" id="query1" name="q"
              placeholder="Low cost"
              aria-label="Search through site content">
           </form>
 
-          <form id="form" role="search">
+          <form id="form2" role="search">
             <button style="font-size:24px"><i class="material-icons">people</i></button>
-            <input type="search" id="query" name="q"
+            <input type="search" id="query2" name="q"
              placeholder="Family friendly"
              aria-label="Search through site content">
           </form>
 
-          <form id="form" role="search">
+          <form id="form3" role="search">
             <button style="font-size:24px"><i class="material-icons">wc</i></button>
-            <input type="search" id="query" name="q"
+            <input type="search" id="query3" name="q"
              placeholder="Romantic"
              aria-label="Search through site content">
           </form> 
 
-          <form id="form" role="search">
+          <form id="form4" role="search">
             <button style="font-size:24px"><i class="material-icons">gesture</i></button>
-            <input type="search" id="query" name="q"
+            <input type="search" id="query4" name="q"
              placeholder="Pets allowed"
              aria-label="Search through site content">
           </form>
@@ -72,7 +74,7 @@
 
      <h2 class="accomm">Accommodations in Marseille</h2>
      <h2 class="more">Show More</h2>
-     <div class="accommodations">
+        <div class="accommodations">
          <figure>
            <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="picture of hotel">
            <figcaption><b>Hotel de la mer</b><br>
@@ -107,7 +109,6 @@
                Night starting at 23$<br>
                &#9733; &#9733; &#9733; &#9733; &#9734;</figcaption>
           </figure>
-          
 
           <figure>
             <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="picture of hotel">
@@ -115,9 +116,9 @@
                Night starting at 76$<br>
                &#9733; &#9733; &#9733; &#9733; &#9733;</figcaption>
           </figure>
-     </div>
+        </div>
    <!-- most popular-->
-     <div class="Popular">
+      <div class="popular">
          <h2>Most Popular</h2>
          <figure>
             <img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="picture of hotel">
@@ -139,75 +140,76 @@
                Night starting at 68$<br><br>
                &#9733; &#9733; &#9733; &#9733; &#9734;</figcaption>
           </figure>
-     </div>
+      </div>
 <!-- activity-->
-     <section id="activity">
-      <h2>Activities in Marseille</h2>
+<section id="activity">
+  <h2>Activities in Marseille</h2>
 
-      <a href="#" class="act1">
-        <div>
-          <div class="photo1"></div>
-          <h5>Old Port</h5>
-        </div>
-      </a>
+  <a href="#" class="act1">
+    <div>
+      <div class="photo1"></div>
+      <h5>Old Port</h5>
+    </div>
+  </a>
 
-      <a href="#" class="act2">
-        <div>
-          <div class="photo2"></div>
-          <h5>Pom&egrave;gues Fort</h5>
-        </div>
-      </a>
+  <a href="#" class="act2">
+    <div>
+      <div class="photo2"></div>
+      <h5>Pom&egrave;gues Fort</h5>
+    </div>
+  </a>
 
-      <a href="#" class="act3">
-        <div>
-          <div class="photo3"></div>
-          <h5>Frioul Island</h5>
-        </div>
-      </a>
+  <a href="#" class="act3">
+    <div>
+      <div class="photo3"></div>
+      <h5>Frioul Island</h5>
+    </div>
+  </a>
 
-      <a href="#" class="act4">
-        <div>
-          <div class="photo4"></div>
-          <h5>Calanques National Park</h5>
-        </div>
-      </a>
+  <a href="#" class="act4">
+    <div>
+      <div class="photo4"></div>
+      <h5>Calanques National Park</h5>
+    </div>
+  </a>
 
-      <a href="#" class="act5">
-        <div>
-          <div class="photo5"></div>
-          <h5>Notre-Dame-de-la-Garde</h5>
-        </div>
-      </a>
+  <a href="#" class="act5">
+    <div>
+      <div class="photo5"></div>
+      <h5>Notre-Dame-de-la-Garde</h5>
+    </div>
+  </a>
 
-      <a href="#" class="act6">
-        <div>
-          <div class="photo6"></div>
-          <h5>Longchamp Park</h5>
-        </div>
-      </a>
-    </section>
-  </main>
-</div>
+  <a href="#" class="act6">
+    <div>
+      <div class="photo6"></div>
+      <h5>Longchamp Park</h5>
+    </div>
+  </a>
+</section>
+
+
+    
 
 
 
 <!-- footer -->
      <footer>
+        <p><strong>About</strong></p>
         <ul>
-           <p><strong>About</strong></p>
            <li>site map</li>
            <li>General Terms and Conditions</li>
            <li>Date and Privacy</li>
         </ul>
-
+ 
+        <p><strong>Our Accommodations</strong></p>
         <ul>
-            <p><strong>Our Accommodations</strong></p>
            <li>Quality Assessment</li>
            <li>You gave a hotel?</li>
         </ul>
 
+        
         <ul>
-           <p><strong>Asistance</strong></p>
            <li>Hel Desk</li>
            <li>Contact Us</li>
         </ul>
