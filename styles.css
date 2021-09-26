@@ -369,17 +369,25 @@ li:first-child {
 
 /* media query for mobile screens */
 @media only screen and (min-width: 360px) and (max-width: 640px) {
-  .heading {
-    vertical-align: top;
+  
+
+  #logo_box {
+    padding: 20px;
+    margin-right: 200px;
   }
 
-  #navigation {
+
+
+  #wrapper{
     text-align: center;
     margin-top: -55px;
-    margin-left: -20px;
     padding-top: 50px;
     width: 100%;
     padding-bottom: 50px;
+  }
+
+  #wrapper a {
+    margin-right: 20px;
   }
   
   ul li a {
@@ -388,33 +396,37 @@ li:first-child {
     flex-direction: row; 
   }
 
-  #navigation .signUp {
-   position: relative;
-   bottom: 90px;
+  #sign_up {
+      position: absolute;
+      top: 65px;
+      left: 200px;
   }
 
   .heading h3, h5 {
-    margin-top: 20%;
+    margin-top: 30%;
   }
 
   .heading h5 {
     margin-top: 40px;
   }
 
-  .searchBar {
-    width: 100%;
-    position: relative;
-    bottom: 50px;
+  #form {
+    margin-top: 50%;
+  
   }
 
   .filters {
-    padding-bottom: 60%;
     display: flex;
     flex-direction: column;
   }
 
+  .filters form {
+    margin: 10px;
+  }
+
   .city {
-    margin-top: 20%;
+    margin-top: 80%;
+
   }
 
   .accomm {
@@ -453,8 +465,8 @@ li:first-child {
 
   .more {
     position: relative;
-    bottom: 30px;
-    left: 50px;
+    top: 2050px;
+    left: -100px;
   }
   
 
@@ -465,9 +477,16 @@ li:first-child {
     left: 70px;
   }
 
+  .popular h2 {
+    margin-right: 60%;
+    position: relative;
+    bottom: 50px;
+  }
+
   .popular figure {
     width: 100%;
     margin-left: 1px;
+    margin-bottom: 50px;
   }
 
   .popular figcaption {
@@ -522,8 +541,9 @@ li:first-child {
 
 @media only screen and (min-width: 650px) and (max-width: 1024px) {
 
-  #navigation {
-    padding-top: 70px;
+  #wrapper a {
+    margin-top: -40px;
+    
   }
   
 
@@ -545,6 +565,10 @@ li:first-child {
     display: flex;
     flex-direction: column;
     margin-bottom: 30%;
+  }
+
+  .filters form {
+    margin: 10px;
   }
 
   #activity h2 {
